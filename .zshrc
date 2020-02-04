@@ -121,7 +121,7 @@ export PATH=$PATH:/Users/khuynh/Library/Python/3.7/bin
 
 # add fzf keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg -i --line-number'
+export FZF_DEFAULT_COMMAND='rg -i'
 
 # used for tracking dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles

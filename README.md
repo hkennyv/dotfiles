@@ -3,7 +3,7 @@ author(s): khuynh
 
 ## Overview
 Dotfile management using a bare git repository method (see
-[here](https://www.atlassian.com/git/tutorials/dotfiles).
+[here](https://www.atlassian.com/git/tutorials/dotfiles)).
 
 ## Setup
 To use this, you need to setup the proper aliases using the following commands:
