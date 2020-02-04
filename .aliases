@@ -1,0 +1,19 @@
+# filesystem aliases
+alias l="ls"
+alias ll="l -l"
+alias lla="l -la"
+
+# git aliases
+alias gst="git status"
+alias gco="git checkout"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gcl="git clone"
+alias gd="git diff"
+alias gl="git pull"
+alias gp="git push"
+alias glg="git log"
+
+
