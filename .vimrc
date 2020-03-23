@@ -17,10 +17,12 @@ Plug 'scrooloose/nerdcommenter'
 " language specific plugins
 Plug 'rust-lang/rust.vim'
 Plug 'psf/black'
+Plug 'prettier/vim-prettier', { 'do' : 'yarn install' }
 
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'kadekillary/Turtles'
+Plug 'arzg/vim-colors-xcode'
 
 " initialize plugin system
 call plug#end()
@@ -36,7 +38,7 @@ let g:ale_linters = {
 " vim-cool settings
 let g:CoolTotalMatches = 1
 
-" gruvbox settings
+" theme settings
 set background=dark
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
