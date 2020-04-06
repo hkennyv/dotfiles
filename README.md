@@ -59,3 +59,65 @@ config checkout
 ```bash
 config config --local status.showUntrackedFiles no
 ```
+
+## Mac OS Setup
+
+### Installation
+
+* [brew](https://brew.sh/)
+
+Install brew using the following:
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+* install brew bundle
+
+```
+brew tap Homebrew/bundle
+```
+
+* install the `.Brewfile`
+
+Use the following command to install the `.Brewfile`:
+
+```
+brew bundle --file .Brewfile
+```
+
+This will install the following **binaries**:
+
+* python3, pip3
+* node
+* yarn
+* fzf
+* rg
+
+and the following **applications**:
+
+* iterm2 terminal emulator
+* rectangle wm
+* discord
+* slack
+* transmission torrent client
+
+* vim 8.0+
+
+check the version of vim with `vim --version` and install with brew if version
+is less than 8.0.
+
+* [vscode insiders](https://code.visualstudio.com/insiders/)
+
+
+### Steps
+
+* follow the [new machine setup](#new-machine-setup)
+* install [vim-plug](https://github.com/junegunn/vim-plug)
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+* open vim and run `:PlugInstall`
