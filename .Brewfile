@@ -7,6 +7,8 @@ brew 'node'         # latest nodejs
 brew 'yarn'         # latest yarn
 brew 'fzf'          # latest fzf
 brew 'ripgrep'      # latest ripgrep
+brew 'neofetch'     # latest neofetch
+brew 'htop'         # process manager
 
 cask 'iterm2'       # latest iterm2
 cask 'rectangle'    # latest rectangle wm
