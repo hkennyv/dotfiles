@@ -16,3 +16,14 @@ cask 'discord'
 cask 'slack'        # latest slack
 cask 'transmission' # latest transmission
 cask 'visual-studio-code'   # stable vscode
+
+
+# these will install the latest releases according to brew
+# you can install other versions and then symlink them to /usr/local/bin
+# by using the following commands for example installing a newer version
+# of python:
+#
+# $ brew install python
+# $ brew install python@3.8
+# $ brew unlink python
+# $ brew link python@3.8 --force
