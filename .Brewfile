@@ -9,6 +9,7 @@ brew 'fzf'          # latest fzf
 brew 'ripgrep'      # latest ripgrep
 brew 'neofetch'     # latest neofetch
 brew 'htop'         # process manager
+brew 'tmux'         # terminal multiplexer
 
 cask 'iterm2'       # latest iterm2
 cask 'rectangle'    # latest rectangle wm
