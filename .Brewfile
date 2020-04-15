@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
 brew 'node'         # latest nodejs
 brew 'yarn'         # latest yarn
