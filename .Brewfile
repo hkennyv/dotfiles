@@ -2,6 +2,14 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+cask 'iterm2'       # latest iterm2
+cask 'rectangle'    # latest rectangle wm
+cask 'discord'
+cask 'slack'        # latest slack
+cask 'transmission' # latest transmission
+cask 'visual-studio-code'   # stable vscode
+cask 'cyberduck'    # SFTP client
+
 brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
 brew 'node'         # latest nodejs
@@ -11,13 +19,6 @@ brew 'ripgrep'      # latest ripgrep
 brew 'neofetch'     # latest neofetch
 brew 'htop'         # process manager
 brew 'tmux'         # terminal multiplexer
-
-cask 'iterm2'       # latest iterm2
-cask 'rectangle'    # latest rectangle wm
-cask 'discord'
-cask 'slack'        # latest slack
-cask 'transmission' # latest transmission
-cask 'visual-studio-code'   # stable vscode
 
 
 # these will install the latest releases according to brew
