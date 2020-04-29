@@ -121,3 +121,40 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 
 * open vim and run `:PlugInstall`
+
+## Ubuntu install
+
+### Installation
+
+* update apt
+
+```bash
+sudo apt update && sudo apt -y upgrade
+```
+
+* install git
+
+Install git using the following:
+
+```bash
+sudo apt install git
+```
+
+* create ssh key and add to git
+
+```bash
+ssh-keygen -b 4096 -t rsa
+```
+
+* add ssh key to github [here](https://github.com/settings/keys)
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+* clone this repository **using the following command** (it is important to use
+  the --bare flag):
+
+```bash
+git clone --bare git@github.com:hkennyv/dotfiles.git $HOME/.cfg
+```
