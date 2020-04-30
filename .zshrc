@@ -101,28 +101,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# global aliases
 if [ -f ~/.aliases ]; then
 . ~/.aliases
 fi
 
-alias hdd="cd /Volumes/hdd/"
-alias rejoule="cd /Volumes/hdd/Documents/rejoule/"
+# local aliases (not vc'd)
+if [ -f ~/.aliases.local ]; then
+. ~/.aliases.local
+fi
 
-alias get_esp32="export PATH=$HOME/esp/bin:$HOME/esp/xtensa-esp32-elf/bin:$PATH"
-
-export IDF_PATH=~/esp/esp-idf
-
+# PATH
 source ~/.profile
-export PATH=$HOME/esp/xtensa-esp32-elf/bin:$HOME/esp/bin:$PATH
-
-export PATH="$(yarn global bin):$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH=$PATH:/Users/khuynh/Library/Python/3.7/bin
 
 # add fzf keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files'
 
-# used for tracking dotfiles
-# https://www.atlassian.com/git/tutorials/dotfiles
-alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
