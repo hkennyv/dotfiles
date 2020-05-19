@@ -1,0 +1,6 @@
+brew 'sdl2'         # sdl2
+brew 'sdl2_image'   # handling images
+brew 'sdl2_ttf'     # handling fontface rendering
+brew 'sdl2_mixer'   # playing sounds
+
+brew 'lua'          # scripting interface
