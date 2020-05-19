@@ -4,3 +4,5 @@ brew 'sdl2_ttf'     # handling fontface rendering
 brew 'sdl2_mixer'   # playing sounds
 
 brew 'lua'          # scripting interface
+
+brew 'glm'          # mathematics library for graphics software
