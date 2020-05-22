@@ -10,6 +10,7 @@ cask 'transmission' # latest transmission
 cask 'visual-studio-code'   # stable vscode
 cask 'cyberduck'    # SFTP client
 
+brew 'macvim'  	    # override the system vim in /usr/bin/local 
 brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
 brew 'node'         # latest nodejs
