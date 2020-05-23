@@ -8,7 +8,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-sensible'
 Plug 'romainl/vim-cool'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 "
 Plug 'scrooloose/nerdtree'
@@ -31,6 +31,7 @@ call plug#end()
 let g:ale_sign_column_always = 1
 let g:ale_linters = {
 \  'c': ['gcc', 'clang'],
+\  'cpp': ['clang', 'g++'],
 \  'javascript': ['eslint'],
 \  'python': ['pylint', 'flake8']
 \}
