@@ -69,6 +69,7 @@ plugins=(
   osx
   pylint
 )
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
