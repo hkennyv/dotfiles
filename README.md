@@ -154,8 +154,11 @@ is less than 8.0.
 
 ### Other useful programs
 
+-   [rustup](https://www.rust-lang.org/tools/install)
 -   [vscode insiders](https://code.visualstudio.com/insiders/) (to uninstall the
     stable version that is installed with the `.Brewfile`, delete `Visual Studio Code.app`)
+-   [XCode](https://developer.apple.com/download/more/) - you want to install
+    both XCode and the Command Line Tools for XCode
 
 ### Vim setup
 

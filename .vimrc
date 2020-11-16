@@ -78,8 +78,9 @@ let g:NERDDefaultAlign = 'left'     " left flush comments
 let g:NERDCommentEmptyLines = 1     " comment empty lines
 
 " fzf key mappings
-nnoremap <C-p> :Files<Cr>
-nnoremap <S-f> :Rg<Cr>
+nnoremap <S-p> :Files<Cr>
+nnoremap <S-f> :Lines<Cr>
+nnoremap <S-b> :Buffer<Cr>
 
 " coc.nvim settings
 

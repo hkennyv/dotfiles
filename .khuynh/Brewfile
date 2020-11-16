@@ -9,6 +9,7 @@ cask 'slack'        # latest slack
 cask 'transmission' # latest transmission
 cask 'visual-studio-code'   # stable vscode
 cask 'cyberduck'    # SFTP client
+cask 'coconutbattery' # battery monitor
 
 brew 'macvim'  	    # override the system vim in /usr/bin/local 
 brew 'rustup-init'  # latest rustup
