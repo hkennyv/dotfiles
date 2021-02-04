@@ -211,6 +211,37 @@ git clone --bare git@github.com:hkennyv/dotfiles.git $HOME/.cfg
 
 ## Windows Setup
 
+### Ninite install
+
+Head over to <https://ninite.com/> and select the following programs:
+
+- chrome
+- teamviewer
+- windirstat
+- winscp
+- vlc
+- qbittorrent
+- malwarebytes
+- steam
+
+Run the ninite installer to have all the programs installed.
+
+### Install MSYS2
+
+Follow instructions to install [MSYS2](https://www.msys2.org/) to get a proper
+unix(ish) shell environment set up.
+
+#### Update MSYS2 path to include windows path
+
+Open to `C:\msys64\msys2.ini` and edit the file to uncomment the line:
+
+```
+MSYS2_PATH_TYPE=inherit
+```
+
+### Toolchain setup
+
+
 ### THIS SECTION IS A WIP
 
 For windows setups, there are a few ways to get a UNIX-like environment. I
