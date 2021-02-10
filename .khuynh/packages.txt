@@ -1,0 +1,9 @@
+zsh
+git
+vim
+
+htop
+tmux
+neofetch
+ripgrep
+fzf
