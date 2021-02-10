@@ -263,16 +263,18 @@ brew install openssl readline sqlite3 xz zlib
 Or via apt:
 
 ```
-sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev 
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
-Finally, install pyenv:
+Finally, install pyenv (mac os):
 
 ```
 brew install pyenv
 ```
 
-or via curl:
+or via curl (mac os or linux):
 
 ```
 curl https://pyenv.run | bash

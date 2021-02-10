@@ -2,6 +2,8 @@ zsh
 git
 vim
 
+build-essential
+
 htop
 tmux
 neofetch
