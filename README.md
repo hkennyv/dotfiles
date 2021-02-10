@@ -180,40 +180,20 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 sudo apt update && sudo apt -y upgrade
 ```
 
-- install git
-
-Install git using the following:
-
-```bash
-sudo apt install git
-```
-
-- install zsh
-
-```bash
-sudo apt install zsh
-```
-
-- follow the instructions for [setting up your shell](#setup-shell-and-dotfiles)
-  to get setup with zsh
-
-- create ssh key and add to git
-
-```bash
-ssh-keygen -b 4096 -t rsa
-```
-
-- add ssh key to github [here](https://github.com/settings/keys)
-
-```bash
-cat ~/.ssh/id_rsa.pub
-```
-
 - install packages from `.khuynh/packages.txt`
 
 ```bash
 cat ~/.khuynh/packages.txt | xargs sudo apt install -y
 ```
+
+- follow the instructions for [installing your ssh-key](#install-ssh-key) and
+  add it to github
+
+- follow the instructions for [setting up your shell](#setup-shell-and-dotfiles)
+  to get setup with zsh
+
+- see the [toolchain setup](#toolchain-setup) section for instructions for
+  specific languages/toolchains
 
 ## Windows Setup
 
@@ -265,21 +245,73 @@ this by using the following command in your MSYS2 shell (after you restart it):
 echo $PATH
 ```
 
-### Toolchain setup
+## Toolchain setup
 
-#### Python
+This section contains instructions for installing specific language toolchains.
 
-#### Node.js
+### Python
 
-#### Rust
+#### Mac OS and Linux
 
-### THIS SECTION IS A WIP
+For UNIX-like environments, use [pyenv](https://github.com/pyenv/pyenv) to
+manage your python environments. Install the dependencies:
 
-For windows setups, there are a few ways to get a UNIX-like environment. I
-prefer to configure [MSYS2](https://www.msys2.org/) on my windows machines.
-Some alternatives include
-[WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10),
-[Cygwin](https://www.cygwin.com/), and more.
+```
+brew install openssl readline sqlite3 xz zlib
+```
+
+Or via apt:
+
+```
+sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev 
+```
+
+Finally, install pyenv:
+
+```
+brew install pyenv
+```
+
+or via curl:
+
+```
+curl https://pyenv.run | bash
+```
+
+Then follow the instructions from pyenv to install your version of choice.
+
+Don't forget to add the shims to your `.profile.local`!
+
+#### Windows
+
+If you're using WSL, install using the instructions above. If not, you can
+use the installer directly from the [Python website](https://www.python.org/downloads/).
+
+\*ensure to check the box that adds python to your PATH
+
+### Node.js
+
+#### Mac OS
+
+On Mac OS, you can install nodejs & npm via brew:
+
+```
+brew install nodejs
+```
+
+#### Windows
+
+Install node.js and npm via the [node.js site](https://nodejs.org/en/download/)
+installer.
+
+#### Linux
+
+You can install via the [NodeSource binary distribution](https://github.com/nodesource/distributions/blob/master/README.md#deb)
+channel.
+
+### Rust
+
+**TODO**
 
 ## Usage
 
