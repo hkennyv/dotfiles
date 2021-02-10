@@ -9,7 +9,7 @@ Dotfile management using a bare git repository method (see
 
 - [New Machine Setup](#new-machine-setup)
 - [Mac OS Setup](#mac-os-setup)
-- [Debian Setup](#debian-setup)
+- [Ubuntu Setup](#ubuntu-setup)
 - [Windows Setup](#windows-setup)
 - [Usage](#usage)
 
@@ -172,7 +172,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 - open vim and run `:PlugInstall` to install all the plugins listed in your
   `.vimrc`
 
-## Debian Setup
+## Ubuntu Setup
 
 - update apt
 
