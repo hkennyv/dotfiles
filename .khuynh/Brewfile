@@ -12,7 +12,8 @@ cask 'cyberduck'    # SFTP client
 cask 'coconutbattery' # battery monitor
 cask 'dbeaver-community' # database client
 
-brew 'macvim'  	    # override the system vim in /usr/bin/local 
+brew 'rclone'       # cli tool for managing cloud storage
+brew 'macvim'       # override the system vim in /usr/bin/local 
 brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
 brew 'node'         # latest nodejs
