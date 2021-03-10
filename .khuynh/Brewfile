@@ -10,8 +10,10 @@ cask 'transmission' # latest transmission
 cask 'visual-studio-code'   # stable vscode
 cask 'cyberduck'    # SFTP client
 cask 'coconutbattery' # battery monitor
+cask 'dbeaver-community' # database client
 
-brew 'macvim'  	    # override the system vim in /usr/bin/local 
+brew 'rclone'       # cli tool for managing cloud storage
+brew 'macvim'       # override the system vim in /usr/bin/local 
 brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
 brew 'node'         # latest nodejs
@@ -21,6 +23,9 @@ brew 'ripgrep'      # latest ripgrep
 brew 'neofetch'     # latest neofetch
 brew 'htop'         # process manager
 brew 'tmux'         # terminal multiplexer
+brew 'ncdu'         # disk usage analyzer
+brew 'pyenv'        # python environment manager
+brew 'pyenv-virtualenv' # virtualenv plugin for pyenv
 
 
 # these will install the latest releases according to brew

@@ -66,6 +66,7 @@ ZSH_THEME="risto"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  wd
   osx
   pylint
 )
