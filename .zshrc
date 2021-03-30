@@ -69,6 +69,7 @@ plugins=(
   wd
   osx
   pylint
+  fzf-tab   # requires installation: https://github.com/Aloxaf/fzf-tab
 )
 ZSH_DISABLE_COMPFIX=true
 
