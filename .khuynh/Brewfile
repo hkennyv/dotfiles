@@ -27,6 +27,7 @@ brew 'tmux'         # terminal multiplexer
 brew 'ncdu'         # disk usage analyzer
 brew 'pyenv'        # python environment manager
 brew 'pyenv-virtualenv' # virtualenv plugin for pyenv
+brew 'jq'           # CLI JSON processor
 
 
 # these will install the latest releases according to brew
