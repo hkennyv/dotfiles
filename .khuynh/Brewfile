@@ -27,6 +27,7 @@ brew 'tmux'         # terminal multiplexer
 brew 'ncdu'         # disk usage analyzer
 brew 'pyenv'        # python environment manager
 brew 'pyenv-virtualenv' # virtualenv plugin for pyenv
+brew 'git-delta'    # https://github.com/dandavison/delta
 
 
 # these will install the latest releases according to brew
