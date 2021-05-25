@@ -17,3 +17,6 @@ source "$HOME/.cargo/env"
 # yarn global bin is just /opt/homebrew/bin so we can comment this out
 # export PATH="$(yarn global bin):$PATH"
 
+# poetry - python package management tool
+export PATH="$HOME/.poetry/bin:$PATH"
+

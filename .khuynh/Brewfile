@@ -16,6 +16,7 @@ brew 'rclone'       # cli tool for managing cloud storage
 brew 'macvim'       # override the system vim in /usr/bin/local 
 brew 'rustup-init'  # latest rustup
 brew 'python'       # latest python3
+brew 'poetry'       # python package management tool
 brew 'go'           # latest go
 brew 'node'         # latest nodejs
 brew 'yarn'         # latest yarn
