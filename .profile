@@ -4,7 +4,7 @@ arch_name="$(uname -m)"
 
 if [ "${arch_name}" = "arm64" ]; then
     export PATH="/opt/homebrew/bin:$PATH"
-elif [ "${{arch_name}" = "x86_64" ]; then
+elif [ "${arch_name}" = "x86_64" ]; then
     export PATH="/usr/local/bin::$PATH"
 else
     echo "Unknkown architecture ${arch_name}, your PATH may be incomplete"
