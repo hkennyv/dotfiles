@@ -16,6 +16,10 @@ alias gl="git pull"
 alias gp="git push"
 alias glg="git log --stat --decorate"
 
+# k8s
+alias kcl="kubectl"
+alias kclga="kubectl get all"
+
 # used for tracking dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"

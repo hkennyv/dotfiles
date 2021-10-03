@@ -120,6 +120,11 @@ source ~/.profile
 # local PATH
 source ~/.profile.local
 
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
+eval "$(pyenv init -)"
+
 # add fzf keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files'
