@@ -67,7 +67,8 @@ ZSH_THEME="risto"
 plugins=(
   git
   wd
-  osx
+  # osx
+  macos
   pylint
   fzf-tab   # requires installation: https://github.com/Aloxaf/fzf-tab
 )
@@ -129,3 +130,6 @@ eval "$(pyenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files'
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
