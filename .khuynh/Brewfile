@@ -2,15 +2,16 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
-cask 'iterm2'       # latest iterm2
-cask 'rectangle'    # latest rectangle wm
+cask 'iterm2'               # latest iterm2
+cask 'rectangle'            # latest rectangle wm
 cask 'discord'
-cask 'slack'        # latest slack
-cask 'transmission' # latest transmission
+cask 'slack'                # latest slack
+cask 'transmission'         # latest transmission
 cask 'visual-studio-code'   # stable vscode
-cask 'cyberduck'    # SFTP client
-cask 'coconutbattery' # battery monitor
-cask 'dbeaver-community' # database client
+cask 'cyberduck'            # SFTP client
+cask 'coconutbattery'       # battery monitor
+cask 'dbeaver-community'    # database client
+cask 'obsidian'             # markdown knowledge base tool
 
 brew 'rclone'       # cli tool for managing cloud storage
 brew 'macvim'       # override the system vim in /usr/bin/local 
