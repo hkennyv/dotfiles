@@ -1,7 +1,7 @@
 # filesystem aliases
-alias l="ls"
-alias ll="l -l"
-alias lla="l -la"
+alias l="ls -h"
+alias ll="l -lh"
+alias lla="l -lah"
 
 # git aliases
 alias gst="git status"
@@ -27,3 +27,4 @@ alias config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 # fzf live repl
 # https://github.com/pawelduda/fzf-live-repl
 alias fzfp="fzf --print-query --preview-window bottom,90 --preview"
+
