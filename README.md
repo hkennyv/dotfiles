@@ -74,7 +74,7 @@ config config --local status.showUntrackedFiles no
 ```
 
 - check the dotfiles were cloned and checked out correctly. run the following
-  command and your output should confirm you are on the `master` branch
+  command and your output should confirm you are on the `main` branch
   with no new commits
 
 ```
@@ -85,7 +85,7 @@ your output should match something along these lines (ensure your current
 working directory is \$HOME):
 
 ```
-On branch master
+On branch main
 nothing to commit (use -u to show untracked files)
 ```
 
