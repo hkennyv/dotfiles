@@ -115,12 +115,6 @@ if [ -f ~/.aliases.local ]; then
 . ~/.aliases.local
 fi
 
-# PATH
-source ~/.profile
-
-# local PATH
-source ~/.profile.local
-
 # Load pyenv into the shell by adding
 # the following to ~/.zshrc:
 
