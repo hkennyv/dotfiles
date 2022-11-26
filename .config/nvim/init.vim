@@ -38,6 +38,7 @@ set number
 set cursorline
 set wildmenu
 set showmatch
+set signcolumn=yes
 
 " search
 set hlsearch
