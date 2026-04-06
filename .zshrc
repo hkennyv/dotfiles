@@ -118,7 +118,7 @@ fi
 # Load pyenv into the shell by adding
 # the following to ~/.zshrc:
 
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 # add fzf keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

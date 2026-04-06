@@ -112,12 +112,6 @@ brew update
 
 ### Install packages and applications
 
-- install brew bundle
-
-```
-brew tap Homebrew/bundle
-```
-
 - install the `.Brewfile`. this will install all of the packages and cask
   applications listed in the file. i've included the packages and applications
   i use daily along with some qol packages (e.g. ripgrep to replace grep, fzf,
@@ -134,8 +128,8 @@ This will install the following **packages** (check the file in the repository
 for the most up to date list):
 
 - python3, pip3
+- uv
 - node
-- yarn
 - fzf
 - rg
 
@@ -251,38 +245,7 @@ This section contains instructions for installing specific language toolchains.
 
 ### Python
 
-#### Mac OS and Linux
-
-For UNIX-like environments, use [pyenv](https://github.com/pyenv/pyenv) to
-manage your python environments. Install the dependencies:
-
-```
-brew install openssl readline sqlite3 xz zlib
-```
-
-Or via apt:
-
-```
-sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
-```
-
-Finally, install pyenv (mac os):
-
-```
-brew install pyenv
-```
-
-or via curl (mac os or linux):
-
-```
-curl https://pyenv.run | bash
-```
-
-Then follow the instructions from pyenv to install your version of choice.
-
-Don't forget to add the shims to your `.profile.local`!
+Just using [uv](https://github.com/astral-sh/uv) now :-)
 
 #### Windows
 
