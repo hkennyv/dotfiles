@@ -9,8 +9,10 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # rust
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 # local zprofile config
 source "$HOME/.zprofile.local"
 
+
+export PATH="$HOME/.local/bin:$PATH"

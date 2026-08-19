@@ -1,3 +1,7 @@
+# Dedupe fpath/path so oh-my-zsh's compinit metadata check is stable across
+# shell starts (was causing a full completion-cache rebuild every launch).
+typeset -U fpath path
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -70,7 +74,7 @@ plugins=(
   # osx
   macos
   pylint
-  fzf-tab   # requires installation: https://github.com/Aloxaf/fzf-tab
+  # fzf-tab   # requires installation: https://github.com/Aloxaf/fzf-tab
 )
 ZSH_DISABLE_COMPFIX=true
 
@@ -84,11 +88,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -127,3 +128,12 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+export PATH="$HOME/.local/bin:$PATH"
+export CLAUDE_HOME="/Users/kennyvh/me/claude"
+
+# rustup (keg-only homebrew formula) toolchain shims: cargo, rustc, rustfmt, etc.
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
+# use neovim in place of vim
+alias vim=nvim
